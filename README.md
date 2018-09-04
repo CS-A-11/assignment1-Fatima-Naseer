@@ -1,2 +1,2 @@
-# Fatima-Naseer.github.io
-Assignment 2 Personal Site
+Personal site link : https://fatima-naseer.github.io/ and 
+Project site link : 
