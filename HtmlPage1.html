@@ -1,25 +1,29 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
     <title>My CV </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="StyleSheet1.css" type="text/css" />
+
 </head>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="StyleSheet1.css" type="text/css" />
-<script src="MyJS.js" type="text/javascript"></script>
 <body>
 
     <header id="myHeader" class="container">
         <div class="row">
             <h1 class="col-sm-4"></h1>
             <nav class="col-sm-8 text-right">
-                <a class="btn btn-primary1" href="#About">About</a>
-                <a class="btn btn-primary1" href="#Education">Education</a>
-                <a class="btn btn-primary1" href="#Projects">Projects</a>
-                <a class="btn btn-primary1" href="#Experiences">Experiences</a>
-                <a class="btn btn-primary1" href="#Skills & Interests">Skills & Interests</a>
-                <a class="btn btn-primary1" href="#Contact">Contact</a>
+                <a id="a" class="btn btn-primary1" href="#About">About</a>
+                <a id="b" class="btn btn-primary1" href="#Education">Education</a>
+                <a id="c" class="btn btn-primary1" href="#Projects">Projects</a>
+                <a id="d" class="btn btn-primary1" href="#Experiences">Experiences</a>
+                <a id="e" class="btn btn-primary1" href="#Skills & Interests">Skills & Interests</a>
+                <a id="f" class="btn btn-primary1" href="#Contact">Contact</a>
             </nav>
         </div>
     </header>
@@ -30,7 +34,7 @@
                 <div class="row text-center">
                     <h2>Hey! I'm Fatima Naseer</h2>
                     <h3>Student of Bachelors in Computer Science</h3>
-                    <a class="btn btn-primary" href="#Contact">More About Me</a>
+                    <a id="g" class="btn btn-primary" href="#Contact">More About Me</a>
                 </div>
             </div>
         </section>
@@ -41,7 +45,7 @@
                     <div class="bg bg1">
                         <div class="col-sm-3">
 
-                            <img id="unknown" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6nDgBRWi1M4O11mSu-Hv9eFNGYIld6aZxzZ2yPB8PSNxG_D40">
+                            <img id="unknown" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6nDgBRWi1M4O11mSu-Hv9eFNGYIld6aZxzZ2yPB8PSNxG_D40" />
                         </div>
                         <div class="col-sm-9">
                             <h2>About Me</h2>
@@ -266,28 +270,148 @@
                         <h4>My Phone# is (123) 456-7890</h4>
                         <h4>My Address is ABC Town, Lahore.</h4>
                         <br />
-                        <footer class="container text-center">
-                            <br />
-                            <h3>You can also connect through</h3>
-                            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
-                            <a href="https://twitter.com/login?lang=en" class="fa fa-twitter"></a>
-                            <a href="https://www.instagram.com/accounts/login/?hl=en" class="fa fa-instagram"></a>
-                        </footer>
                     </div>
+                    <footer class="container">
+                        <br />
+                        <h3 class="text-center">You can also connect through</h3>
+                        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                        <a href="https://twitter.com/login?lang=en" class="fa fa-twitter"></a>
+                        <a href="https://www.instagram.com/accounts/login/?hl=en" class="fa fa-instagram"></a>
+                        <br />
+                        <br />
+                        <form name="timeForm">
+                            <h2>Current Time Counter</h2>
+                            <input class="text-center " type="text" name="field" value="" size="11" />
+                        </form>
+
+                    </footer>
                 </div>
             </div>
         </section>
-        <footer class="container">
-            <div class="row cop">
-                <p>@copyrights reserved 2018</p>
-            </div>
-        </footer>
     </div>
+
+    <div class="container">
+        <h2 class="text-center">Click here for</h2>
+        <div class="text-center" id="contact">Contact Form</div>
+        <div id="contactForm">
+
+            <h2 class="text-center">Keep in touch!</h2>
+            <p class="text-center"><small>I'll get back to you as quickly as possible</small></p>
+
+            <form action="#">
+                <label for="name">Name</label>
+                <input placeholder="Enter your name..." type="text" required />
+
+                <label for="email">E-mail</label>
+                <br />
+                <input class="bg1" placeholder="Enter your E-mail" type="email" required />
+                <br />
+                <br />
+                <label for="country">Country</label>
+                <select id="Select1" name="country" required>
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="Iran">Iran</option>
+                    <option value="china">China</option>
+                </select>
+                <br />
+                <label for="Comments">Comments</label>
+                <textarea placeholder="Write something..." required></textarea>
+                <input class="formBtn bg1" type="reset" />
+                <input id="idd" class="formBtn bg1" type="submit" />
+
+
+            </form>
+        </div>
+    </div>
+    <footer class="container">
+        <div class="row cop">
+            <p>@copyrights reserved 2018</p>
+        </div>
+    </footer>
+
 </body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+<script src="JavaScript1.js" type="text/javascript"> </script>
+<script>
+         <!--Current Time Counter-->      
+    function sivamtime() {
+        now = new Date();
+        hour = now.getHours();
+        min = now.getMinutes();
+        sec = now.getSeconds();
+
+        if (min <= 9) { min = "0" + min; }
+        if (sec <= 9) { sec = "0" + sec; }
+        if (hour > 12) { hour = hour - 12; add = "pm"; }
+        else { hour = hour; add = "am"; }
+        if (hour == 12) { add = "pm"; }
+
+        document.timeForm.field.value = ((hour <= 9) ? "0" + hour : hour) + ":" + min + ":" + sec + " " + add;
+
+        setTimeout("sivamtime()", 1000);
+    }
+    window.onload = sivamtime;
+
+    $(function () {
+
+
+        // contact form animations
+        $('#contact').click(function () {
+            $('#contactForm').hide(300).show(1000);
+
+
+        });
+        $('#a').click(function () {
+            $('#About').hide(300).show(1000);
+
+        });
+        $('#b').click(function () {
+            $('#Education').hide(300).show(1000);
+
+        });
+        $('#c').click(function () {
+            $('#Projects').hide(300).show(1000);
+
+        });
+        $('#d').click(function () {
+            $('#Experiences').hide(300).show(1000);
+
+        });
+        $('#e').click(function () {
+            $('#Skills & Interests').hide(300).show(1000);
+
+        });
+        $('#f').click(function () {
+            $('#Contact').hide(300).show(1000);
+
+        });
+        $('#g').click(function () {
+            $('#Contact').hide(300).show(1000);
+
+        });
+        $(document).mouseup(function (e) {
+            var container = $("#contactForm");
+
+            if (!container.is(e.target) // if the target of the click isn't the container...
+                && container.has(e.target).length === 0) // ... nor a descendant of the container
+            {
+                container.fadeOut();
+            }
+            var x = document.getElementById('name').value;
+            var letterNumber = /^[a-zA-Z,. ]/;
+            if ((document.getElementById('name').value.match(letterNumber))) {
+                return true;
+            }
+            else {
+                alert("input invalid");
+                return false;
+            }
+        });
+
+    });
+</script>
 </html>
-
-
-
-
-
-

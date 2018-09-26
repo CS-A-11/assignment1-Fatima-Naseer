@@ -7,12 +7,15 @@
 
 header {
     padding: 20px 0;
+    
+
 }
 
 header .row,
 footer .row {
     display: flex;
     align-items: center;
+    position :fixed;
     }
 
 .bg {
@@ -37,6 +40,7 @@ header h1 {
 header nav {
     display: flex;
     justify-content: flex-end;
+   
 }
 
 header p {
@@ -82,7 +86,14 @@ h2 {
     font-family: 'Comic Sans MS';
 }
 
-#unknown {
+#unknown{
+    margin-left: 100px;
+    margin-top: 20px;
+    width: 40%;
+    border-radius: 50%;
+}
+
+.unknown {
     margin-left: 100px;
     margin-top: 20px;
     width: 40%;
@@ -219,4 +230,137 @@ footer {
 .fa-instagram {
     background: #A52A2A;
     color: white;
+}
+
+
+
+/* Add Animation */
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical ;/* Allow the user to vertically resize the textarea (not horizontally) */
+    background-color:rgb(58, 58, 65);
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: rgb(80, 105, 236);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #555;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+/* The Close Button */
+.close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 0; 
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+@import "https://fonts.googleapis.com/css?family=Raleway";
+* { box-sizing: border-box; }
+
+h1{ margin: 0; }
+#contact { 
+  -webkit-user-select: none; /* Chrome/Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+  margin: 4em auto;
+  width: 100px; 
+  height: 30px; 
+  line-height: 30px;
+  background: black;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid white;
+}
+
+#contact:hover { background: #3B5998 }
+#contact:active { background: rgb(86, 191, 204) }
+
+#contactForm { 
+  display: none;
+  border: 6px solid salmon; 
+  padding: 2em;
+  width: 400px;
+  text-align: center;
+  background-color: #555;
+  position: fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%)
+  
+}
+.cool {
+background-color:rgb(58, 58, 65)
+}
+input, textarea { 
+  margin: .8em auto;
+  font-family: inherit; 
+  text-transform: inherit; 
+  font-size: inherit;
+  background-color:#3B5998; 
+  color:rgb(70, 141, 140); 
+  padding: .4em;
+}
+textarea { height: 80px; color : rgb(58, 58, 65);
+           resize: none; }
+
+.formBtn { 
+  width: 140px;
+  display: inline-block;
+  background-color:rgb(86, 191, 204);
+  color: #555;
+  font-weight: 100;
+  font-size: 1.2em;
+  border: none;
+  height: 30px;
 }
